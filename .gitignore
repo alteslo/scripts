@@ -1,0 +1,18 @@
+# Standard list of files/directories to ignore when running git status and other commands.
+
+
+# Ignore IDEs and text editors.
+.idea/
+.vscode/
+
+# Ignore build artifacts.
+/bin/
+/out/
+/build/
+/dist/
+/node_modules/
+
+# Ignore sensitive information.
+.env*
+.secret*
+.venv
