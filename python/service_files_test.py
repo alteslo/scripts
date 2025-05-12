@@ -41,8 +41,11 @@ async def upload_file(session, file_path):
             data = aiohttp.FormData()
             file_data = f.read()
             pbar.update(len(file_data))
-            data.add_field("file", file_data, filename=filename,
-                           content_type="application/zip")
+            data.add_field(
+                "file", file_data,
+                filename=filename,
+                content_type="application/zip"
+            )
 
         try:
             async with session.post(
